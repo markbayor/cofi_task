@@ -1,12 +1,13 @@
-import products from "./data/products.json";
-import promotions from "./data/promotions.json";
-import discountTypes from "./data/discountTypes.json"
+import products from "../data/products.json";
+import promotions from "../data/promotions.json";
+import discountTypes from "../data/discountTypes.json"
 
 export type ProductKey = keyof typeof products; // the SKUs for each product from the json file.
 export type PromotionType = keyof typeof promotions; // Object for each promotion that we add to the store, with the type of discount and object it applies to.
 export type DiscountTypeKey = keyof typeof discountTypes; // type of discount, where it explains how each works and describes the params. If made more complex,
                                                           // it could be used to create discounts automatically (like 3 for 1, etc) according to more parameters, but I wanted to keep it simple for now.
 
+                                                          
 const applyAllPromotionsAutomatically = (basket: Partial<{[key in ProductKey]: number;}>, total: number) => {
   for (const prod in basket) { 
     const currProdPrice = products[<ProductKey>prod].price

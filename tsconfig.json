@@ -65,8 +65,8 @@
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   "include": [
-    "app.ts",
-    "/data/*.json"
+    "./src/app.ts",
+    "./data"
     ],
-  "exclude": ["*.spec.ts"]
+  "exclude": ["./src/*.spec.ts"]
 }
