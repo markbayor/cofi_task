@@ -1,0 +1,18 @@
+{
+  "PROMOTION_1": {
+    "productKey": "VOUCHER",
+    "discount": {
+      "type": "bogof",
+      "minAmount": null,
+      "discountPerUnit": null
+    }
+  },
+  "PROMOTION_2": {
+    "productKey": "TSHIRT",
+    "discount": {
+      "type": "bulk",
+      "minAmount": 3,
+      "discountPerUnit": 1
+    }
+  }
+}

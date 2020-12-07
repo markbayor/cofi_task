@@ -1,0 +1,13 @@
+{
+  "bogof": {
+    "Description": "Buy one product get one of the same product for free, no need for any parameters.",
+    "parameters": {}
+  },
+  "bulk": {
+    "Description": "Applies a price reduction on each product once you acquire more than the amount stipulated as minimum.",
+    "parameters": {
+      "minAmount": "Minimum quantity (inclusive) of the same item you have to buy in order for the promotion to be applicable. Type of number",
+      "discountPerProduct": "Price reduction per unit on the product. Type of number."
+    }
+  }
+}
